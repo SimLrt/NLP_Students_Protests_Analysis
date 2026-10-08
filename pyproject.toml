@@ -1,0 +1,13 @@
+[project]
+name = "gdelt-mobilisations-etudiantes"
+version = "0.1.0"
+description = "Sentiment médiatique et retour à la normale (modèle AR) des mobilisations étudiantes en France à partir de GDELT."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-cloud-bigquery[bqstorage,pandas]>=3.46.1",
+]
+
+[tool.uv]
+# Projet de scripts / notebooks : rien à construire ni à installer comme paquet.
+package = false

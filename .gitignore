@@ -1,0 +1,44 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# --- Environnement uv / venv ---
+.venv/
+venv/
+
+# --- Secrets & identifiants GCP (ne JAMAIS commiter) ---
+.env
+.env.*
+!.env.example
+*credentials*.json
+*service-account*.json
+*-key.json
+application_default_credentials.json
+
+# --- Données (re-générables via gdelt_import.py) ---
+data/*
+!data/README.md
+!data/raw/
+data/raw/*
+!data/raw/.gitkeep
+*.parquet
+*.csv
+*.jsonl
+
+# --- Notebooks ---
+.ipynb_checkpoints/
+
+# --- Outils / caches ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- IDE ---
+.vscode/
+.idea/
+
+# --- macOS ---
+.DS_Store
